@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="text_size">25sp</dimen>
+	<dimen name="text_size_middle">25sp</dimen>
+	<dimen name="text_size_small">15sp</dimen>
+	<dimen name="tab_text_size">14sp</dimen>
+	<dimen name ="farmerlist_name_text_size">24sp</dimen>
+	<dimen name ="farmerlist_text_size">20sp</dimen>
+	<dimen name ="farmerlist_image_width">80dp</dimen>
+	<dimen name ="farmerlist_image_heigt">100dp</dimen>
+</resources>

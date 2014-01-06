@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/entryInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:text="@string/entry_info" />
+    </LinearLayout>
+	<TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#458B00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size" />
+
+	<ListView
+	    android:id="@+id/listView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/navigation"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/title" >
+
+	</ListView>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:accordion="http://schemas.android.com/apk/res/com.asiaonline.tobaccoassistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#696969"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+     >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.asiaonline.tobaccoassistant.widget.AccordionView
+                android:id="@+id/accordion_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                accordion:header_layout_fold_button_id="@id/foldButton"
+                accordion:header_layout_id="@layout/accordion_header"
+                accordion:header_layout_label_id="@id/foldText"
+                accordion:section_bottom="@layout/accordion_footer"
+                accordion:section_container="@layout/accordion_section"
+                accordion:section_container_parent="@id/section_content"
+                accordion:section_headers="@array/accordion_sections"
+                accordion:section_visibility="@array/accordion_visibility"
+                android:background="#696969"
+                android:orientation="vertical"
+                 >
+
+                <include
+                    android:id="@+id/self_info_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    layout="@layout/identicard_section" />
+				<include
+				    android:id="@+id/more_info_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    layout="@layout/more_info_layout"
+				    />
+                <include
+                    android:id="@+id/plant_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    layout="@layout/plant_section" />
+
+                <include
+                    android:id="@+id/bankcard_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/bankcard_section" />
+            </com.asiaonline.tobaccoassistant.widget.AccordionView>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_style_one"
+                android:gravity="center"
+                android:text="@string/save_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

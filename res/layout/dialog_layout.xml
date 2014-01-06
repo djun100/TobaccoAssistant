@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="50dp"
+        android:minHeight="40dp"
+        android:background="@drawable/title_bg"
+        android:text="选择设备"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <ListView 
+        android:id="@+id/single_choice_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        ></ListView>
+</RelativeLayout>

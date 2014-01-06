@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+		android:padding="10dp"      
+        >
+         <Button 
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_btn"
+            />
+        <EditText 
+            android:id="@+id/search_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rouded_edittext"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_marginRight="10dp"
+            android:hint="搜您想找的烟农"
+            android:textColorHint="@android:color/darker_gray"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            />
+       
+    </RelativeLayout>
+	<ListView 
+	    android:id="@+id/search_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/title_layout"
+	    ></ListView>
+</RelativeLayout>

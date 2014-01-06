@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp"
+    android:background="@drawable/lv_item_bg"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/listTitle"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/type"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/yield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/area"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/yield"
+        android:textSize="25sp"
+        android:textColor="@color/text"
+        android:text="abc" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text"
+        android:text=""
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/id"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right" />
+</RelativeLayout>

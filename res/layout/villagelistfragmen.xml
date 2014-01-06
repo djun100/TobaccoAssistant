@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/village_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:maxHeight="60dp"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:background="@drawable/title_bg"
+        />
+	<ListView 
+	    android:id="@+id/village_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/village_title"
+	    ></ListView>
+	<RelativeLayout 
+	    android:id="@+id/aler_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/white"
+	    android:layout_below="@+id/village_title"
+	    android:layout_centerInParent="true"
+	    android:gravity="center"
+	    >
+	    <TextView 
+	        android:id="@+id/tishi_textview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/farmerlist_name_text_size"
+	        android:gravity="center_horizontal"
+	        android:text="@string/village_tishi"
+	        />
+	    <Button 
+	        android:id="@+id/village_sure_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/btn_style_one"
+	        android:layout_below="@+id/tishi_textview"
+	        android:layout_marginTop="40dp"
+	        android:text="二维码扫描"
+	        android:textSize="@dimen/text_size"
+	        android:textColor="@color/white"
+	        android:layout_centerHorizontal="true"
+	        />
+	</RelativeLayout>
+</RelativeLayout>
+

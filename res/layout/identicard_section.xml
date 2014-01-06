@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/section_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.asiaonline.tobaccoassistant.widget.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/portrait_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/person"
+            app:border_color="@color/border_color"
+            app:border_width="2dp"
+            app:corner_radius="20dp"
+            app:round_background="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ViewStub
+                android:id="@+id/can_input_stub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout="@layout/personal_info_can_input_layout" />
+
+            <ViewStub
+                android:id="@+id/cannot_input_stub"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout="@layout/personal_info_cannot_input_layout" />
+
+            <ViewStub
+                android:id="@+id/villageName_can_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout="@layout/villagename_spinner" />
+
+            <ViewStub
+                android:id="@+id/villageName_cannot_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout="@layout/villagename_tv" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

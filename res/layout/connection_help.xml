@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:scaleType="centerInside"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+	<TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       	android:padding="10dp"
+       	android:background="@drawable/title_bg"
+       	android:textColor="@color/white"
+       	android:textSize="@dimen/text_size"
+        android:text="使用提示" />
+
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/title"
+	    android:gravity="center"
+	    android:padding="10dp"
+	    android:text="@string/connection_help"
+	    android:textSize="@dimen/text_size" />
+
+	<Button
+	    android:id="@+id/back_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_margin="20dp"
+	    android:background="@drawable/btn_style_zero"
+	    android:text="@string/back"
+	    android:textColor="@color/white"
+	    android:textSize="@dimen/text_size" />
+
+</RelativeLayout>

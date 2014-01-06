@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">烟叶生产通</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<color name="section_bg">#F5F5F5</color>
+	<string name="plant_area">地烟面积:</string>
+	<string name="plant_area_ty">田烟面积：</string>
+	<string name="plant_area_sum">种植面积:</string>
+	<string name="plant_area_hint">大于1且最多保留两位小数</string>
+	<string name="plant_type">种植品种:</string>
+	<string name="contract_plant_num">合同总量:</string>
+	<string name="yield">生产量:</string>
+	<string name="order_yield">指令性计划:</string>
+	<string name="export_store_yield">出口备货计划:</string>
+	<string name="yield_per_mu">亩产:</string>
+	<string name="plowland_area">耕地面积:</string>
+	<string name="plant_no">烟苗数量:</string>
+	<string name="unit_kg">公斤</string>
+	<string name="unit_mu">亩</string>
+	<string name="unit_zhu">株</string>
+	
+	<string name="location">位置信息:</string>
+	<string name="reconnect">重新连接</string>
+	<string name="save">保存</string>
+	<string name="save_text">意向签约</string>
+	<string name="account">拍摄银行卡照片</string>
+	<string name="title">烟叶生产通</string>
+	<string name="search">查询</string>
+	<string name="entry_info">信息录入</string>
+	<string name="name">姓名</string>
+	<string name="id_no">身份证号</string>
+	<string name="history">历年烟叶交售情况查询</string>
+	<string name="wuzi">物资兑现情况查询</string>
+	<string name="year">年度</string>
+	<string name="area_t">计划种植面积</string>
+	<string name="yield_t">计划收购量</string>
+	<color name="link">#FFFF00</color>
+	<string name="connection_help">将机具开关拨到如图位置，蓝牙指示灯常亮，说明连接成功，读卡指示灯闪烁即可刷卡！</string>
+	<string name="gps_help1">进入应用后,若出现下面的对画框，请选择确定：</string>
+	<string name="gps_help2">点击确定后，跳转到以下界面，请勾中图中所示的内容：</string>
+	<string name="bluetooth_help">打开应用时，若出现如下界面，请点击“是”！</string>
+	<string name="setup_sign_out">退出</string>
+	
+	<string name="set_title">设置</string>
+	<string name="btn_version_title">版本更新</string>
+	<string name="btn_version_summary">当前版本:</string>
+	<string name="btn_server_title">服务器设置</string>
+	<string name="btn_server_summary">http://192.168.0.220:8080</string>
+	<string name="btn_down_title">数据下载</string>
+	<string name="btn_up_title">数据上传</string>
+	<string name="btn_voic_title">语音提示</string>
+	<string name="btn_choice_title">设备选择</string>
+	<string name="btn_zxing">二维码扫描</string>
+	<string name="error_message">必填项</string>
+	<string name="error_message_num_format">注意数字格式</string>
+	<string name="scan_tip">请将取景框对准二维码进行扫描</string>
+	<string name="scan_title">扫描二维码</string>
+	<string name="back">返回</string>
+	<string name="village_tishi">您还未绑定烟叶站，请先进行二维码扫描</string>
+	<string-array 
+	    name="plant_type"
+	    >
+	    <item >请选择</item>
+	    <item >云烟87</item>
+	    <item >云烟85</item>
+	    <item >云烟97</item>
+	    <item >云烟317</item>
+	    <item >k346</item>
+	    <item >k326</item>
+	    <item >k358</item>
+	    <item >k326 云烟317</item>
+	    <item >rg11 v2 g28</item>
+	    <item >nc82</item>
+	    <item >红花大金元</item>
+	</string-array>
+	
+	<string-array 
+	    name="national_list"
+	    >
+	    <item >点击选择</item>
+	    <item >汉族</item>
+	    <item >彝族</item>
+	    <item >白族</item>
+	    <item >哈尼族</item>
+	    <item >壮族</item>
+	    <item >傣族</item>
+	    <item >苗族</item>
+	    <item >回族</item>
+	    <item >傈僳族</item>
+	    <item >拉祜族</item>
+	    <item >佤族</item>
+	    <item >纳西族</item>
+	    <item >瑶族</item>
+	    <item >景颇族</item>
+	    <item >藏族</item>
+	    <item >满族</item>
+	    <item >维吾尔族</item>
+	    <item >土家族</item>
+	    <item >蒙古族</item>
+	    <item >布依族</item>
+	    <item >侗族</item>
+	    <item >朝鲜族</item>
+	    <item >哈萨克族</item>
+	    <item >黎族</item>
+	    <item >畲族</item>
+	    <item >仡佬族</item>
+	    <item >东乡族</item>
+	    <item >高山族</item>
+	    <item >水族</item>
+	    <item >羌族</item>
+	    <item >土族</item>
+	    <item >仫佬族</item>
+	    <item >锡伯族</item>
+	    <item >柯尔克孜族</item>
+	    <item >达斡尔族</item>
+	    <item >毛南族</item>
+	    <item >撒拉族</item>
+	    <item >布朗族</item>
+	    <item >塔吉克族</item>
+	    <item >阿昌族</item>
+	    <item >普米族</item>
+	    <item >鄂温克族</item>
+	    <item >怒族</item>
+	    <item >京族</item>
+	    <item >基诺族</item>
+	    <item >德昂族</item>
+	    <item >保安族</item>
+	    <item >俄罗斯族</item>
+	    <item >裕固族</item>
+	    <item >乌兹别克族</item>
+	    <item >门巴族</item>
+	    <item >鄂伦春族</item>
+	    <item >独龙族</item>
+	    <item >塔塔尔族</item>
+	    <item >赫哲族</item>
+	    <item >珞巴族</item>
+	    
+	</string-array>
+	<string-array name="accordion_sections">
+        <item>基本信息</item>
+        <item>其他信息</item>
+        <item>种植信息</item>
+        <item>银行卡</item>
+    </string-array>
+
+    <integer-array name="accordion_visibility">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+	
+   	<string-array 
+	    name="number"
+	    >
+	    <item >点击选择</item>
+	    <item >2</item>
+	    <item >3</item>
+	    <item >4</item>
+	    <item >5</item>
+	    <item >6</item>
+	    <item >7</item>
+	</string-array>
+	<string-array 
+	    name="education"
+	    >
+	    <item >点击选择</item>
+	    <item >小学</item>
+	    <item >初中</item>
+	    <item >高中</item>
+	    <item >大专</item>
+	</string-array>
+	<string-array name="history_plant">
+	    <item >点击选择</item>
+	    <item >大麦</item>
+	    <item >玉米</item>
+	    <item >大豆</item>
+	    <item >水稻</item>
+	    <item >蚕豆</item>
+	    <item >油菜</item>
+	    <item >烟叶</item>
+	</string-array>
+</resources>

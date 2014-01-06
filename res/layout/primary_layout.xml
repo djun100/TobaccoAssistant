@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" 
+        android:background="@drawable/footer_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp"
+        >
+		<RadioButton
+            android:id="@+id/lookOver"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/tab_bg_selector"
+            android:drawableTop="@drawable/tab_person_selector"
+            android:gravity="center"
+            android:textSize="@dimen/tab_text_size"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:text="查看" />
+		
+        <RadioButton
+            android:id="@+id/contract_rb"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/tab_bg_selector"
+            android:drawableTop="@drawable/tab_contract_selector"
+            android:gravity="center"
+            android:textSize="@dimen/tab_text_size"
+            android:textColor="@color/white"
+            android:text="信息采集" />
+
+        <RadioButton
+            android:id="@+id/setting"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/tab_bg_selector"
+            android:drawableTop="@drawable/tab_set_selector"
+            android:gravity="center"
+            android:textSize="@dimen/tab_text_size"
+            android:textColor="@color/white"
+            android:text="@string/set_title" />
+
+    </RadioGroup>
+
+    <com.asiaonline.tobaccoassistant.widget.NoScrollViewpager
+        android:id="@+id/content_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/navigation"
+    />
+
+</RelativeLayout>

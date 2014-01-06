@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    <TextView 
+        android:id="@+id/yes_tishi_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       	android:padding="10dp"
+       	android:textSize="20sp"
+       	android:text="暂无意向签约农户"
+        />
+    <com.asiaonline.tobaccoassistant.widget.SwipeListView
+            android:id="@+id/yes_farmerlist"
+            android:layout_below="@+id/yes_tishi_tv"
+            android:listSelector="#00000000"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeBackView="@+id/back"
+            android:scrollbars="none"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeMode="both"
+            />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.asiaonline.tobaccoassistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/section_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <Button
+            android:id="@+id/take_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_style_one"
+            android:text="拍照"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/bank_card_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="银行卡号:"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/bank_card_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/take_pic"
+            android:layout_toRightOf="@+id/bank_card_id_tv"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <com.asiaonline.tobaccoassistant.widget.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bankCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bank_card"
+            app:border_color="@color/border_color"
+            app:border_width="2dp"
+            app:corner_radius="10dp"
+            android:visibility="gone"
+           	android:layout_centerHorizontal="true"
+             />
+
+        <ImageView
+            android:id="@+id/del_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bankCard"
+            android:layout_alignTop="@+id/bankCard"
+            android:src="@drawable/del"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asiaonline.tobaccoassistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+   <!-- zxing -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	
+	<application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d0fa6aeddbf28016a0fee4b408ef54ee" />
+
+        <activity
+            android:name="com.asiaonline.tobaccoassistant.CollectInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+             >
+            
+        </activity>
+            
+        <activity 
+            android:name="com.asiaonline.tobaccoassistant.PrimaryActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.asiaonline.tobaccoassistant.HelpActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            ></activity>
+        <activity 
+            android:name="com.asiaonline.tobaccoassistant.FarmerShowActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"
+            ></activity>
+        <activity android:name="com.asiaonline.tobaccoassistant.FarmersListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity 
+            android:name="com.asiaonline.tobaccoassistant.CameraActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            ></activity>
+        <activity android:name="ShowBankCardActivity"
+            android:theme="@android:style/Theme.Translucent"
+            ></activity>
+        <activity 
+            android:name="com.asiaonline.tobaccoassistant.DeviceActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            ></activity>
+         <!-- zxing -->
+        <activity android:name="com.asiaonline.tobaccoassistant.zxing.CaptureActivity"
+            android:screenOrientation="portrait"/>
+        
+        <service 
+            android:name="com.asiaonline.tobaccoassistant.service.ConnectionService"
+            ></service>
+        
+    </application>
+
+</manifest>
